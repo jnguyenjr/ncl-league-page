@@ -21,11 +21,10 @@ https://github.com/nmelhado/league-page/blob/master/TRAINING_WHEELS.md#ii-adding
 
 export const managers = [
     {
-      "roster": 1,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "Johny Nguyen",
-      "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+      "managerID" : "736286180299223040",
       "location": "Auburn, WA", // (optional)
-      "bio": "TBD",
+      "bio": "I bleed, sweat and breath fantasy football. I spend way to much time on the waivers and looking for trades. My name is Johny, and I am a fantaholic.",
       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2008, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "atl", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
@@ -43,9 +42,8 @@ export const managers = [
       "preferredContact": "Sleeper", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "roster": 2,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "Lewis Nguyen",
-      "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+      "managerID" : "955177726913130496",
       "location": "Renton, WA", // (optional)
       "bio": "TBD",
       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
@@ -65,9 +63,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "roster": 3,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "Tony Nguyen",
-      "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+      "managerID" : "1129946200096022528",
       "location": "", // (optional)
       "bio": "TBD",
       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
@@ -87,7 +84,6 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "roster": 4,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "Eric Phan",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "", // (optional)
@@ -96,7 +92,11 @@ export const managers = [
       "fantasyStart": null, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "sea", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "mode": null, // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
-      "rival": null,
+      "mode": null, // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
+      "rival": {
+        "name": "",
+        "link": null,
+      },
       "favoritePlayer": null, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
       "valuePosition": null, // (optional) Favorite position (QB, WR, RB, TE, etc.)
       "rookieOrVets": null, // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
@@ -105,9 +105,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "roster": 4,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "Phaisol Vo",
-      "tookOver": 2024, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+      "managerID" : "347166422343942144",
       "location": "Renton", // (optional)
       "bio": "TBD",
       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
@@ -127,9 +126,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "roster": 5,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "TT Nguyen",
-      "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+      "managerID" : "1103584597905989632",
       "location": "", // (optional)
       "bio": "TBD",
       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
@@ -149,9 +147,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "roster": 6,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "Van Ho",
-      "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+      "managerID" : "1129960046663790592",
       "location": "Renton", // (optional)
       "bio": "TBD",
       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
@@ -171,9 +168,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "roster": 7,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "Tim Togikawa",
-      "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+      "managerID" : "1130027440769867776",
       "location": "Seattle", // (optional)
       "bio": "TBD",
       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
@@ -193,9 +189,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "roster": 8,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "Danny Bui",
-      "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+      "managerID" : "1129964596728659968",
       "location": "", // (optional)
       "bio": "TBD",
       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
@@ -215,9 +210,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "roster": 9,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "Sang Huynh",
-      "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+      "managerID" : "1130043007081848832",
       "location": "Renton", // (optional)
       "bio": "TBD",
       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
@@ -237,9 +231,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "roster": 10,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "JB Arandia",
-      "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+      "managerID" : "736814179834601472",
       "location": "Renton", // (optional)
       "bio": "TBD",
       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
@@ -258,16 +251,18 @@ export const managers = [
       "tradingScale": 10, // 1 - 10
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },   {
-      "roster": 11,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "James Salazar",
-      "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+      "managerID" : "1130029624622305280",
       "location": "", // (optional)
       "bio": "",
       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
       "fantasyStart": null, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "sea", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "mode": null, // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
-      "rival": null,
+      "rival": {
+        "name": "",
+        "link": null,
+      },
       "favoritePlayer": null, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
       "valuePosition": null, // (optional) Favorite position (QB, WR, RB, TE, etc.)
       "rookieOrVets": null, // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
@@ -276,10 +271,9 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "roster": 11,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "Jose Valle",
-      "tookOver": 2025, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Renton", // (optional)
+      "managerID" : "1132013977568952320",
       "bio": "TBD",
       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
@@ -298,9 +292,8 @@ export const managers = [
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
     {
-      "roster": 12,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "Gerald Dalida",
-      "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+      "managerID" : "1130048019061350400",
       "location": "Renton", // (optional)
       "bio": "TBD",
       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
