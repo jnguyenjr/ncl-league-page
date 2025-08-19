@@ -6,7 +6,7 @@
 	
 	export let roster, leagueTeamManagers, startersAndReserve, players, rosterPositions, division, expanded;
 
-	$: team = leagueTeamManagers.teamManagersMap[leagueTeamManagers.currentSeason][roster.roster_id].team;
+	$: team = roster ? leagueTeamManagers.teamManagersMap[leagueTeamManagers.currentSeason][roster.roster_id].team : null;
 
 	let i = 0;
 
@@ -70,13 +70,13 @@
 		return digestedRoster;
 	}
 
-	$: finalStarters = digestData(players, roster.starters, true);
+	$: finalStarters = roster ? digestData(players, roster.starters, true) : null;
 	let finalBench = [];
-	$: if(roster.players) {
+	$: if(roster && roster.players) {
 		finalBench = digestData(players, roster.players);
 	}
 	let finalIR = null;
-	if(roster.reserve) {
+	if(roster && roster.reserve) {
 		finalIR = digestData(players, roster.reserve, false, true);
 	}
 
@@ -102,7 +102,7 @@
 		return innerRecord;
 	}
 
-	$: record = buildRecord(roster);
+	$: record = roster ? buildRecord(roster) : null;
 
 	let selected = "0px";
 	let status = "minimized";

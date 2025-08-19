@@ -25,9 +25,9 @@
 
     $: teamTransactions = transactions.filter(t => t.rosters.includes(parseInt(rosterID)));
 
-    $: roster = rosters[rosterID];
+    $: roster = rosterID ? rosters[rosterID] : null;
 
-    $: coOwners = year && rosterID ? leagueTeamManagers.teamManagersMap[year][rosterID].managers.length > 1 : roster.co_owners;
+    $: coOwners = year && rosterID ? leagueTeamManagers.teamManagersMap[year][rosterID].managers.length > 1 : (rosterID ? roster.co_owners : null);
 
     $: commissioner = viewManager.managerID ? leagueTeamManagers.users[viewManager.managerID].is_owner : false;
 

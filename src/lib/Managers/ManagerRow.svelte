@@ -16,6 +16,8 @@
         if(dates.end) retired = true;
 
         ({rosterID, year} = getRosterIDFromManagerID(leagueTeamManagers, manager.managerID) || {rosterID, year});
+    } else {
+        retired = true;
     }
 
     const commissioner = manager.managerID ? leagueTeamManagers.users[manager.managerID].is_owner : false;

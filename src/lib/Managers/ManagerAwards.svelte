@@ -182,6 +182,8 @@
         }
     }
 
+    $: computePodiums(rosterID);
+
     const computeAward = (award) => {
         switch (award) {
             case 1:

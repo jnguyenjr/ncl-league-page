@@ -1,5 +1,5 @@
-import { managers as managersObj } from '$lib/utils/leagueInfo';
 import { goto } from "$app/navigation";
+import { managers as managersObj } from '$lib/utils/leagueInfo';
 import { stringDate } from './news';
 
 const QUESTION = 'managers/question.jpg';
@@ -220,6 +220,7 @@ export const getAvatarFromTeamManagers = (teamManagers, rosterID, year) => {
 }
 
 export const getTeamNameFromTeamManagers = (teamManagers, rosterID, year) => {
+    if(!rosterID) return null;
     if(!year || year > teamManagers.currentSeason) {
         year = teamManagers.currentSeason;
     }
