@@ -20,6 +20,7 @@ https://github.com/nmelhado/league-page/blob/master/TRAINING_WHEELS.md#ii-adding
 // To omit an optional field, set it's value to null
 
 export const managers = [
+    // 0
     {
       "name": "Johny Nguyen",
       "managerID" : "736286180299223040",
@@ -42,6 +43,7 @@ export const managers = [
       "tradingScale": 7, // 1 - 10
       "preferredContact": "Sleeper", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
+    // 1
     {
       "name": "Lewis Nguyen",
       "managerID" : "955177726913130496",
@@ -63,6 +65,7 @@ export const managers = [
       "tradingScale": 10, // 1 - 10
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
+    // 2
     {
       "name": "Tony Nguyen",
       "managerID" : "1129946200096022528",
@@ -84,6 +87,7 @@ export const managers = [
       "tradingScale": 10, // 1 - 10
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
+    // 3
     {
       "name": "Eric Phan",
       "tookOver": null, // (optional) used if a manager took over a team, delete this line or change to null otherwise
@@ -105,6 +109,7 @@ export const managers = [
       "tradingScale": 5, // 1 - 10
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
+    // 4
     {
       "name": "Phaisol Vo",
       "managerID" : "347166422343942144",
@@ -126,6 +131,7 @@ export const managers = [
       "tradingScale": 10, // 1 - 10
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
+    // 5
     {
       "name": "TT Nguyen",
       "managerID" : "1103584597905989632",
@@ -147,27 +153,29 @@ export const managers = [
       "tradingScale": 10, // 1 - 10
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
+    // 6
     {
       "name": "Van Ho",
       "managerID" : "1129960046663790592",
-      "location": "Renton", // (optional)
-      "bio": "TBD",
+      "location": "Kent", // (optional)
+      "bio": "Van Ho",
       "photo": "/managers/van_h.jpg", // square ratio recommended (no larger than 500x500)
-      "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
+      "fantasyStart": 2018, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "hou", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "mode": null, // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
       "rival": {
-        name: "Rival", // Can be anything (usually your rival's name)
-        link: 6, // manager array number within this array, or null to link back to all managers page
-        image: "/managers/everyone.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+        name: "Sang", // Can be anything (usually your rival's name)
+        link: 9, // manager array number within this array, or null to link back to all managers page
+        image: "/managers/sang_h.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
       },
-      "favoritePlayer": 1426, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
-      "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
+      "favoritePlayer": nill, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
+      "valuePosition": "RB", // (optional) Favorite position (QB, WR, RB, TE, etc.)
       "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
-      "philosophy": "TBD",
-      "tradingScale": 10, // 1 - 10
+      "philosophy": "I don’t think I’ll ever win",
+      "tradingScale": 1, // 1 - 10
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
+    // 7
     {
       "name": "Tim Togikawa",
       "managerID" : "1130027440769867776",
@@ -189,6 +197,7 @@ export const managers = [
       "tradingScale": 10, // 1 - 10
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
+    // 8
     {
       "name": "Danny Bui",
       "managerID" : "1129964596728659968",
@@ -210,6 +219,7 @@ export const managers = [
       "tradingScale": 10, // 1 - 10
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
+    // 9
     {
       "name": "Sang Huynh",
       "managerID" : "1130043007081848832",
@@ -231,6 +241,7 @@ export const managers = [
       "tradingScale": 10, // 1 - 10
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
+    // 10
     {
       "name": "JB Arandia",
       "managerID" : "736814179834601472",
@@ -251,7 +262,9 @@ export const managers = [
       "philosophy": "TBD",
       "tradingScale": 10, // 1 - 10
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
-    },   {
+    },   
+    // 11
+    {
       "name": "James Salazar",
       "managerID" : "1130029624622305280",
       "location": "", // (optional)
@@ -271,6 +284,7 @@ export const managers = [
       "tradingScale": 5, // 1 - 10
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
+    // 12
     {
       "name": "Jose Valle",
       "location": "Kent", // (optional)
@@ -292,25 +306,26 @@ export const managers = [
       "tradingScale": 8, // 1 - 10
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
+    // 13
     {
       "name": "Gerald Dalida",
       "managerID" : "1130048019061350400",
       "location": "Renton", // (optional)
-      "bio": "TBD",
+      "bio": "Yessah",
       "photo": "/managers/gerald_d.jpg", // square ratio recommended (no larger than 500x500)
-      "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
+      "fantasyStart": 2021, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "sea", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "mode": null, // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
       "rival": {
-        name: "Rival", // Can be anything (usually your rival's name)
-        link: null, // manager array number within this array, or null to link back to all managers page
-        image: "/managers/everyone.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
+        name: "TT", // Can be anything (usually your rival's name)
+        link: 6, // manager array number within this array, or null to link back to all managers page
+        image: "/managers/tt_n.png", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
       },
-      "favoritePlayer": 1426, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
+      "favoritePlayer": null, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
       "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
       "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
-      "philosophy": "TBD",
-      "tradingScale": 10, // 1 - 10
+      "philosophy": "If can, can. If no can, no can. Yessah 🤙🏽",
+      "tradingScale": 9, // 1 - 10
       "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     },
   ]
